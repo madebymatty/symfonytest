@@ -2,7 +2,7 @@
     "name": "matt/project",
     "license": "proprietary",
     "type": "project",
-	"description" : "test project"
+	"description": "The \"Symfony Standard Edition\" distribution",
     "autoload": {
         "psr-4": {
             "": "src/"
