@@ -1,0 +1,4 @@
+# FRONTEND ROUTES
+page:
+    path:  /page
+    defaults: { _controller: MeiliPageBundle:Default:index }

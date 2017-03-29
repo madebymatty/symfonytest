@@ -1,3 +1,7 @@
-app:
-    resource: '@AppBundle/Controller/'
-    type: annotation
+AppBundle:
+    resource: '@MeiliAppBundle/Resources/config/routing.yml'
+    prefix:   /
+
+PageBundle:
+    resource: '@MeiliPageBundle/Resources/config/routing.yml'
+    prefix:   /
