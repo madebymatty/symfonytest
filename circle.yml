@@ -45,11 +45,11 @@ test:
   # commands run before CircleCI's inferred commands
   pre:
     # Handled automatically by CircleCI
-    # - npm install
+    - npm install
     # - bundle install
-    # - bower install
-    # - grunt build --target=dist
-    # - composer install -d dist --prefer-source --no-interaction --optimize-autoloader
+    - bower install
+    - grunt build --target=dist
+    - composer install -d dist --prefer-source --no-interaction --optimize-autoloader
     - composer install -d src --prefer-source --no-interaction --optimize-autoloader
 
 # Deploying your code to your web servers
@@ -60,7 +60,7 @@ deployment:
         commands:
             - git config --global user.email "mjaywoods@gmail.com"
             - git config --global user.name "madebymatty"
-            - git add ./src -A
+            - git add ./dist -A
             - git commit -m "Build by Matt W via CircleCI"
             - git push origin master
             #- cap production deploy
