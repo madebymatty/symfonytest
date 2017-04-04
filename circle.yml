@@ -25,11 +25,11 @@ dependencies:
   # commands run after CircleCI's inferred commands
   post:
     - sudo cp config/apache/dist.vhost.conf /etc/apache2/sites-available
-    - a2ensite dist.vhost.conf
+    - sudo a2ensite dist.vhost.conf
     - sudo cp config/apache/src.vhost.conf /etc/apache2/sites-available
-    - a2ensite src.vhost.conf
-    - a2enmod rewrite
-    - a2enmod headers
+    - sudo a2ensite src.vhost.conf
+    - sudo a2enmod rewrite
+    - sudo a2enmod headers
     - sudo service apache2 restart
 
 # Preparing the databases for your tests
