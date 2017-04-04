@@ -10,7 +10,7 @@ class DefaultController extends Controller
 
     public function indexAction(Request $request)
     {
-
+		//comment
         // replace this example code with whatever you need
         return $this->render('default/page.html.twig');
     }
