@@ -44,15 +44,6 @@ module.exports = function (grunt) {
             }
         },
 
-        // Automatically inject Bower components into the HTML file
-        wiredep: {
-            src: {
-                src: ['src/src/Nsm/Bundle/AppBundle/Resources/views/layout-app.html.twig'],
-                ignorePath: '../../../../../../web',
-                exclude: ['/src/web/bower_components/modernizr/modernizr.js']
-            }
-        },
-
         clean: {
             dist: {
                 dot: true,
@@ -214,13 +205,9 @@ module.exports = function (grunt) {
     grunt.registerTask('default', []);
 
     grunt.registerTask('build', [
-        'wiredep',
         'clean',
         'copy',
         'useminPrepare',
-        'concat:generated',
-        'cssmin:generated',
-        'uglify:generated',
         'filerev',
         'filerev_assets',
         'usemin',

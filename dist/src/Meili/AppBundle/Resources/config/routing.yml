@@ -1,0 +1,5 @@
+# FRONTEND ROUTES
+homepage:
+    path:  /
+    defaults: { _controller: MeiliAppBundle:Default:index }
+    method:   GET
