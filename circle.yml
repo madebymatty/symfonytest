@@ -1,6 +1,8 @@
 # The machine section enables you to configure the virtual machine that runs your tests.
 # https://circleci.com/docs/configuration#machine-configuration
 machine:
+  timezone:
+    Europe/London
   php:
     version: 5.6.22
   node:
