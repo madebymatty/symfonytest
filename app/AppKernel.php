@@ -5,8 +5,7 @@ use Symfony\Component\Config\Loader\LoaderInterface;
 
 class AppKernel extends Kernel
 {   
-    ini_set('date.timezone', 'Europe/London');
-    
+ 
     public function __construct($environment, $debug)
     {
         date_default_timezone_set( 'Europe/London' );
