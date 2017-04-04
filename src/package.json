@@ -1,16 +1,16 @@
 {
-    "name": "club-evolution-app",
+    "name": "madebymatty",
     "version": "0.0.0",
     "private": true,
-    "description": "Club Evolution App",
+    "description": "MBM",
     "keywords": [],
-    "homepage": "http://newism.com.au",
-    "bugs": "https://github.com/newism/app.clubevolution.com.au/issues",
-    "author": "Leevi Graham <leevi@newism.com.au> (http://leevigraham.com)",
+    "homepage": "http://www.madebymatty.com",
+    "bugs": "https://github.com/madebymatty/symfonytest/issues",
+    "author": "Matt Woods <mjaywoods@gmail.com> (http://www.madebymatty.com)",
     "contributors": {},
     "repository": {
         "type": "git",
-        "url": "https://github.com/newism/app.clubevolution.com.au"
+        "url": "https://github.com/madebymatty/symfonytest"
     },
     "devDependencies": {
         "bower": "^1.3.9",
