@@ -24,6 +24,7 @@ dependencies:
     - mysql -u ubuntu -e "Create database symfony2_standard_template"
   # commands run after CircleCI's inferred commands
   post:
+    - sudo rm /etc/apache2/mods-enabled/php5.load
     - sudo cp config/apache/dist.vhost.conf /etc/apache2/sites-available
     - sudo a2ensite dist.vhost.conf
     - sudo cp config/apache/src.vhost.conf /etc/apache2/sites-available
